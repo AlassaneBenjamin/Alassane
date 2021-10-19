@@ -74,10 +74,7 @@ ALTER TABLE BESTELLUNGZUTAT ADD FOREIGN KEY (ZUTATENNR) REFERENCES ZUTAT (ZUTATE
 
 
 
-gweknvemkgwvhighkjweggg
-gwevngzgv
-gvbenhjgh
-hgegewguguznfgwezngfuzngcegwzf
+
 
 
 
