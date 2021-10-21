@@ -186,5 +186,24 @@ INSERT INTO BESTELLUNGZUTAT(BESTELLNR, ZUTATENNR, MENGE) VALUES (11, 1012, 5);
 
 INSERT INTO BESTELLUNGZUTAT(BESTELLNR, ZUTATENNR, MENGE) VALUES (12, 1010, 15);
 
+insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+values (1, 'Karttoffelauflauf', 7, (' 500g Kartoffel ' , ' 300g Tomaten ' , ' 2Pk Morzarella ' , ' Eine Knoblauchzehe ' , ' 2 Bunde Basilikum ' , ' 100ml Sahne ' , ' 1Prise Salz '));
+
+insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+values (2, 'Gemüsepfanne mit Couscous', 8, (' 1 Zucchini ' , ' 1 halbe Zwiebel ' , ' 2 Tomaten ' , ' 1 Karotte ' , ' 1 Lauch ' , ' 1 Knoblauchzehe ' , ' 1 Würfel Gemüsebrühe ' , ' 1Pk Couscous '));
+
+insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+values (3, 'Veganer Stracciatella-Joghurt', 2, (' 50g Zartbitterkuvertüre ', ' 500g Sojajoguhrt '));
+
+insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+values (4, 'Veganer-Morzarella', 4, (' 2 Esslöffel Flohsamenschalenmehl ', ' 50g Cashewnüsse ', '1 Esslöffel Zitronensaft ', '1g Salz & Pfeffer'));
+
+insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+values (5, 'Chicken Marengo', 6, (' 1 EL Olivenöl ',' 300g Champignon ',' 1 Chicken leg ',' 1 Hühnerbrühewürfel ',' 100g schwarze Kalamata-Olive ',' 50g Petersilie '));
+
+insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+values (6, 'Salmon & soya bohnen salat', 6, (' 1 Ei ',' 200g Sojabohne ',' 1 Limette ',' 2 EL Samenöl ',' 250g Linsen ',' 200g Lachsfilet '));
+
+
 
 COMMIT WORK;
