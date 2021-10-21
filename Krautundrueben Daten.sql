@@ -85,6 +85,29 @@ VALUES (5002, 'Zarbitterkuvertüre', '50 gramm', 0.4, 450, 101, 280, 47, 6.6),
  (5006, 'Zitronensaft', '1 EL', 0.10, 250, 101, 0.58, 5, 0.3),
  (5007, 'Salz', '1 gramm', 1, 100, 101, 10000, 0, 0.34),
  (5008, 'Pfeffer', '1 gramm', 1, 100, 101, 60, 0, 0.35);
+ 
+INSERT INTO ZUTAT (
+ZUTATENNR, 
+BEZEICHNUNG, 
+EINHEIT, 
+NETTOPREIS, 
+BESTAND, 
+lieferant, 
+KALORIEN, 
+KOHLENHYDRATE, 
+PROTEIN) 
+VALUES 	(4002, '200g Sojabohne', 'Dose', 3.20, 200, 101, 294, 22, 25),		
+		(4003, 'Limette', 'Stück', 0.60, 9, 101, 17, 5.40, 0.7),
+		(4004, '2 Esslöfel Samenöl', 'Esslöfel', 2.50, 10, 101, 240, 0, 0),
+		(4005, '250g Linsen', 'Dose', 5.00, 12, 101, 412, 46, 20),
+		(4006, '200g Lachsfilet', 'Stück', 12.50, 10, 101, 292, 0, 43.24),
+		(4011, '1 Esslöfel Olivenöl', 'Esslöfel', 2.50, 5, 101, 119, 0, 0),
+		(4012, '300g Champignion', 'Packung', 4.5, 4, 101, 66, 9.8, 9.2),
+		(4013, 'Chicken leg', 'Stück', 2.8, 5, 101, 212, 0, 23),
+		(4014, '1 Hühnerbrühewürfel', 'Stück', 1.2, 20, 101, 30, 2, 0),
+		(4015, '100g pitted black kalamata olive', 'Dose', 5.9, 10, 101, 105, 6, 0.9),
+		(4016, '50g Petersilie', 'Bunt', 3, 4, 101, 12, 0.7, 1),
+		(5055, '100g Sahne', 'Packung', 3.2, 10, 101, 345, 2.9, 2);
 
 INSERT INTO BESTELLUNG (KUNDENNR, BESTELLDATUM, RECHNUNGSBETRAG) VALUES (2001,'2020-07-01', 6.21);
 
