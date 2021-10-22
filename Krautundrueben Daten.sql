@@ -78,13 +78,13 @@ lieferant,
 KALORIEN,
 KOHLENHYDRATE,
 PROTEIN) 
-VALUES (5002, 'Zarbitterkuvertüre', '50 gramm', 0.4, 450, 101, 280, 47, 6.6),
- (5003, 'Sojajoghurt', '500 gramm', 1.1, 100, 101, 210, 0, 20.2),
- (5004, 'Flohsamenmehl', '2 EL', 0.56, 60, 101, 14, 0, 0.15),
- (5005, 'Cashewnüsse', '50 gramm', 0.43, 1000, 101, 250, 15, 9),
- (5006, 'Zitronensaft', '1 EL', 0.10, 250, 101, 0.58, 5, 0.3),
- (5007, 'Salz', '1 gramm', 1, 100, 101, 10000, 0, 0.34),
- (5008, 'Pfeffer', '1 gramm', 1, 100, 101, 60, 0, 0.35);
+VALUES (5002, '50 gramm Zarbitterkuvertüre', 'gramm', 0.4, 450, 101, 280, 47, 6.6),
+ (5003, '500 gramm Sojajoghurt', 'gramm', 1.1, 100, 101, 210, 0, 20.2),
+ (5004, '2EL Flohsamenmehl', 'EL', 0.56, 60, 101, 14, 0, 0.15),
+ (5005, '50 gramm Cashewnüsse', 'gramm', 0.43, 1000, 101, 250, 15, 9),
+ (5006, '1 EL Zitronensaft', 'EL', 0.10, 250, 101, 0.58, 5, 0.3),
+ (5007, '1 gramm Salz', 'gramm', 1, 100, 101, 10000, 0, 0.34),
+ (5008, '1 gramm Pfeffer', 'gramm', 1, 100, 101, 60, 0, 0.35);
  
 INSERT INTO ZUTAT (
 ZUTATENNR, 
