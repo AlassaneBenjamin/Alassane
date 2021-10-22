@@ -205,10 +205,10 @@ insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
 values (6, 'Salmon & soya bohnen salat', 6, (' 1 Ei ',' 200g Sojabohne ',' 1 Limette ',' 2 EL Samenoel ',' 250g Linsen ',' 200g Lachsfilet '));
 
 insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
-values (1, 'vegan', 'Keine Tierischen Produckte', 3);
+values (1, 'vegan', 'Keine tierischen Produkte', 3);
 
 insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
-values (2, 'vegan', 'Keine Tierischen Produkte', 4);
+values (2, 'vegan', 'Keine tierischen Produkte', 4);
 
 insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
 values (3, 'vegetarisch', 'Kein Fleisch', 1);
