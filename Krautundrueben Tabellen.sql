@@ -51,6 +51,14 @@ CREATE TABLE LIEFERANT (
     EMAIL           VARCHAR(50)
 );
 
+create table rezepte(
+id int not null,
+rezeptname varchar not null,
+zutaten_anzahl int not null,
+zutaten varchar not null,
+constraint rezepte_pk primary key (id)
+);
+
 /******************************************************************************/
 /***                              Primary Keys                              ***/
 /******************************************************************************/
