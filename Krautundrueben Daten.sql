@@ -204,5 +204,22 @@ values (5, 'Chicken Marengo', 6, (' 1 EL Olivenoel ',' 300g Champignon ',' 1 Chi
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
 values (6, 'Salmon & soya bohnen salat', 6, (' 1 Ei ',' 200g Sojabohne ',' 1 Limette ',' 2 EL Samenoel ',' 250g Linsen ',' 200g Lachsfilet '));
 
+insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
+values (1, 'vegan', 'Keine tierischen Produkte', 3);
+
+insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
+values (2, 'vegan', 'Keine tierischen Produkte', 4);
+
+insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
+values (3, 'vegetarisch', 'Kein Fleisch', 1);
+
+insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
+values (4, 'vegetarisch', 'Kein Fleisch', 2);
+
+insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
+values(5, 'low carb', 'Wenig Kohlenhydrate', 5);
+
+insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
+values (6, 'high protein','Hohe Menge an Proteine', 6);
 
 COMMIT WORK;
