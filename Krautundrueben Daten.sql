@@ -222,4 +222,11 @@ values(5, 'low carb', 'Wenig Kohlenhydrate', 5);
 insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
 values (6, 'high protein','Hohe Menge an Proteine', 6);
 
+insert into beschraenkungen (beschraenkungsnr, beschraenkung, beschreibung)
+values (01, 'Laktose', 'Eine Intoleranz bei Kuhmilchprodukten und Kuhmilch'), 
+(02, 'Zöliakie', 'Eine Glutenunverträglichkeit'), 
+(03, 'Erdnuss', 'Allergie bei Erdnüssen'), 
+(04, 'Ei', 'Allergie bei Hühnereiern'), 
+(05, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten');
+
 COMMIT WORK;
