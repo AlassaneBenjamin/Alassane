@@ -199,10 +199,10 @@ INSERT INTO BESTELLUNGZUTAT(BESTELLNR, ZUTATENNR, MENGE) VALUES (11, 1012, 5);
 INSERT INTO BESTELLUNGZUTAT(BESTELLNR, ZUTATENNR, MENGE) VALUES (12, 1010, 15);
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
-values (1, 'Kartoffelauflauf', 7, (' 500g Kartoffel ' , ' 300g Tomaten ' , ' 2Pk Morzarella ' , ' 2 Bunde Basilikum ' , ' 100ml Sahne ' , ' 1Prise Salz '));
+values (1, 'Kartoffelauflauf', 7, (' 500g Kartoffel ' , ' 300g Tomaten ' , ' 2Pk Mozzarella ' , ' 2 Bunde Basilikum ' , ' 100ml Sahne ' , ' 1Prise Salz '));
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
-values (2, 'Gemuesepfanne mit Couscous', 8, (' 1 Zucchini ' , ' 1 halbe Zwiebel ' , ' 1 Karotte ' , ' 1 Lauch ' , ' 1 Knoblauchzehe ' , ' 1 Wuerfel Gemuesebruehe ' , ' 1Pk Couscous ', ' 1Pk Mozzarella '));
+values (2, 'Gemuesepfanne mit Couscous', 8, (' 1 Zucchini ' , ' 1 halbe Zwiebel ' , ' 1 Karotte ' , ' 1 Lauch ' , ' 1 Knoblauchzehe ' , ' 1 Wuerfel Gemuesebruehe ' , ' 1Pk Couscous '));
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
 values (3, 'Veganer Stracciatella-Joghurt', 2, (' 50g Zartbitterkuvertuere ', ' 500g Sojajoguhrt '));
@@ -211,7 +211,7 @@ insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
 values (4, 'Veganer-Morzarella', 4, (' 2 Essloeffel Flohsamenschalenmehl ', ' 50g Cashewnuesse ', '1 Essloeffel Zitronensaft ', '1g Pfeffer'));
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
-values (5, 'Chicken Marengo', 6, (' 1 EL Olivenoel ',' 300g Champignon ',' 1 Hühnerbein ',' 1 Huehnerbruehewuerfel ',' 100g Kalamata-Oliven ',' 50g Petersilie '));
+values (5, 'Chicken Marengo', 6, (' 1 EL Olivenoel ',' 300g Champignon ',' 1 Huehnerbein ',' 1 Huehnerbruehewuerfel ',' 100g Kalamata-Oliven ',' 50g Petersilie '));
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
 values (6, 'Salmon & soya bohnen salat', 6, (' 1 Ei ',' 200g Sojabohne ',' 1 Limette ',' 2 EL Samenoel ',' 250g Linsen ',' 200g Lachsfilet '));
@@ -240,7 +240,7 @@ values (7, 'Karnivor' , 'Fleisch' , 7);
 insert into beschraenkungen (beschraenkungsnr, beschraenkung, beschreibung, rezept_id)
 values (01, 'Laktose', 'Eine Intoleranz bei tierischen Milchprodukten', 1), 
 (02, 'Zöliakie', 'Eine Glutenunverträglichkeit',0), 
-(03, 'Erdnuss', 'Allergie bei Nüssen',4), 
+(03, 'Nuss', 'Allergie bei Nuessen',4), 
 (04, 'Ei', 'Allergie bei Hühnereiern', 6), 
 (05, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 6),
 (06, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 3);
