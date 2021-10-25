@@ -223,7 +223,7 @@ insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
 values (6, 'high protein','Hohe Menge an Proteine', 6);
 
 insert into beschraenkungen (beschraenkungsnr, beschraenkung, beschreibung)
-values (01, 'Laktose', 'Eine Intoleranz bei Kuhmilchprodukten und Kuhmilch'), 
+values (01, 'Laktose', 'Eine Intoleranz bei tierischen Milchprodukten'), 
 (02, 'Zöliakie', 'Eine Glutenunverträglichkeit'), 
 (03, 'Erdnuss', 'Allergie bei Erdnüssen'), 
 (04, 'Ei', 'Allergie bei Hühnereiern'), 
