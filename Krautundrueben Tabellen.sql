@@ -69,6 +69,13 @@ rezept_id int not null,
 constraint ernaehrungskategorien_pk primary key (id)
 );
 
+create table  beschraenkungen (
+	beschraenkungsnr		integer not null,
+	beschraenkung			VARCHAR(50),
+	beschreibung			VARCHAR(50),
+	CONSTRAINT beschraenkungen_pk PRIMARY KEY(beschraenkungsnr)
+);
+
 /******************************************************************************/
 /***                              Primary Keys                              ***/
 /******************************************************************************/
