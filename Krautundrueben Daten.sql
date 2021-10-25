@@ -108,6 +108,14 @@ VALUES 	(4002, '200g Sojabohne', 'Dose', 3.20, 200, 101, 294, 22, 25),
 		(4015, '100g pitted black kalamata olive', 'Dose', 5.9, 10, 101, 105, 6, 0.9),
 		(4016, '50g Petersilie', 'Bunt', 3, 4, 101, 12, 0.7, 1),
 		(5055, '100g Sahne', 'Packung', 3.2, 10, 101, 345, 2.9, 2);
+		
+update ZUTAT 
+set bezeichnung = 'Hühnerbein'
+where zutatennr = 4013;
+
+update ZUTAT 
+set bezeichnung = 'kalamata Oliven'
+where zutatennr = 4015;
 
 INSERT INTO BESTELLUNG (KUNDENNR, BESTELLDATUM, RECHNUNGSBETRAG) VALUES (2001,'2020-07-01', 6.21);
 
