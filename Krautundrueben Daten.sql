@@ -237,11 +237,13 @@ values (6, 'high protein','Hohe Menge an Proteine', 6);
 insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
 values (7, 'Karnivor' , 'Fleisch' , 7);
 
-insert into beschraenkungen (beschraenkungsnr, beschraenkung, beschreibung)
-values (01, 'Laktose', 'Eine Intoleranz bei tierischen Milchprodukten'), 
-(02, 'Zöliakie', 'Eine Glutenunverträglichkeit'), 
-(03, 'Erdnuss', 'Allergie bei Erdnüssen'), 
-(04, 'Ei', 'Allergie bei Hühnereiern'), 
-(05, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten');
+insert into beschraenkungen (beschraenkungsnr, beschraenkung, beschreibung, rezept_id)
+values (01, 'Laktose', 'Eine Intoleranz bei tierischen Milchprodukten', 1), 
+(02, 'Zöliakie', 'Eine Glutenunverträglichkeit',0), 
+(03, 'Erdnuss', 'Allergie bei Nüssen',4), 
+(04, 'Ei', 'Allergie bei Hühnereiern', 6), 
+(05, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 6),
+(06, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 3);
+
 
 COMMIT WORK;
