@@ -79,13 +79,13 @@ KALORIEN,
 KOHLENHYDRATE,
 PROTEIN,
 rezept_id) 
-VALUES (5002, '50 gramm Zarbitterkuvertüre', 'gramm', 0.4, 450, 101, 280, 47, 6.6, 3),
- (5003, '500 gramm Sojajoghurt', 'gramm', 1.1, 100, 101, 210, 0, 20.2, 3),
- (5004, '2EL Flohsamenmehl', 'EL', 0.56, 60, 101, 14, 0, 0.15, 4),
- (5005, '50 gramm Cashewnüsse', 'gramm', 0.43, 1000, 101, 250, 15, 9, 4),
- (5006, '1 EL Zitronensaft', 'EL', 0.10, 250, 101, 0.58, 5, 0.3, 4),
- (5007, '1 gramm Salz', 'gramm', 1, 100, 101, 10000, 0, 0.34, 1),
- (5008, '1 gramm Pfeffer', 'gramm', 1, 100, 101, 60, 0, 0.35,4);
+VALUES (5002, 'Zarbitterkuvertüre', 'gramm', 0.4, 450, 101, 280, 47, 6.6, 3),
+ (5003, 'Sojajoghurt', 'gramm', 1.1, 100, 101, 210, 0, 20.2, 3),
+ (5004, 'Flohsamenmehl', 'EL', 0.56, 60, 101, 14, 0, 0.15, 4),
+ (5005, 'Cashewnüsse', 'gramm', 0.43, 1000, 101, 250, 15, 9, 4),
+ (5006, 'Zitronensaft', 'EL', 0.10, 250, 101, 0.58, 5, 0.3, 4),
+ (5007, 'Salz', 'gramm', 1, 100, 101, 10000, 0, 0.34, 1),
+ (5008, 'Pfeffer', 'gramm', 1, 100, 101, 60, 0, 0.35,4);
  
 INSERT INTO ZUTAT (
 ZUTATENNR, 
@@ -98,18 +98,18 @@ KALORIEN,
 KOHLENHYDRATE, 
 PROTEIN, 
 rezept_id) 
-VALUES 	(4002, '200g Sojabohne', 'Dose', 3.20, 200, 101, 294, 22, 25, 6),		
+VALUES 	(4002, 'Sojabohne', 'Dose', 3.20, 200, 101, 294, 22, 25, 6),		
 		(4003, 'Limette', 'Stück', 0.60, 9, 101, 17, 5.40, 0.7, 6),
-		(4004, '2 Esslöfel Samenöl', 'Esslöfel', 2.50, 10, 101, 240, 0, 0, 6),
-		(4005, '250g Linsen', 'Dose', 5.00, 12, 101, 412, 46, 20, 6),
-		(4006, '200g Lachsfilet', 'Stück', 12.50, 10, 101, 292, 0, 43.24, 6),
-		(4011, '1 Esslöfel Olivenöl', 'Esslöfel', 2.50, 5, 101, 119, 0, 0, 5),
-		(4012, '300g Champignion', 'Packung', 4.5, 4, 101, 66, 9.8, 9.2, 5),
+		(4004, 'Samenöl', 'Esslöfel', 2.50, 10, 101, 240, 0, 0, 6),
+		(4005, 'Linsen', 'Dose', 5.00, 12, 101, 412, 46, 20, 6),
+		(4006, 'Lachsfilet', 'Stück', 12.50, 10, 101, 292, 0, 43.24, 6),
+		(4011, 'Olivenöl', 'Esslöfel', 2.50, 5, 101, 119, 0, 0, 5),
+		(4012, 'Champignion', 'Packung', 4.5, 4, 101, 66, 9.8, 9.2, 5),
 		(4013, 'Chicken leg', 'Stück', 2.8, 5, 101, 212, 0, 23, 5),
-		(4014, '1 Hühnerbrühewürfel', 'Stück', 1.2, 20, 101, 30, 2, 0, 5),
-		(4015, '100g pitted black kalamata olive', 'Dose', 5.9, 10, 101, 105, 6, 0.9, 5),
-		(4016, '50g Petersilie', 'Bunt', 3, 4, 101, 12, 0.7, 1, 5),
-		(5055, '100g Sahne', 'Packung', 3.2, 10, 101, 345, 2.9, 2, 1);
+		(4014, 'Hühnerbrühewürfel', 'Stück', 1.2, 20, 101, 30, 2, 0, 5),
+		(4015, 'black kalamata olive', 'Dose', 5.9, 10, 101, 105, 6, 0.9, 5),
+		(4016, 'Petersilie', 'Bunt', 3, 4, 101, 12, 0.7, 1, 5),
+		(5055, 'Sahne', 'Packung', 3.2, 10, 101, 345, 2.9, 2, 1);
 
 
 		
@@ -199,16 +199,16 @@ INSERT INTO BESTELLUNGZUTAT(BESTELLNR, ZUTATENNR, MENGE) VALUES (11, 1012, 5);
 INSERT INTO BESTELLUNGZUTAT(BESTELLNR, ZUTATENNR, MENGE) VALUES (12, 1010, 15);
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
-values (1, 'Karttoffelauflauf', 7, (' 500g Kartoffel ' , ' 300g Tomaten ' , ' 2Pk Morzarella ' , ' Eine Knoblauchzehe ' , ' 2 Bunde Basilikum ' , ' 100ml Sahne ' , ' 1Prise Salz '));
+values (1, 'Kartoffelauflauf', 7, (' 500g Kartoffel ' , ' 300g Tomaten ' , ' 2Pk Morzarella ' , ' 2 Bunde Basilikum ' , ' 100ml Sahne ' , ' 1Prise Salz '));
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
-values (2, 'Gemuesepfanne mit Couscous', 8, (' 1 Zucchini ' , ' 1 halbe Zwiebel ' , ' 2 Tomaten ' , ' 1 Karotte ' , ' 1 Lauch ' , ' 1 Knoblauchzehe ' , ' 1 Wuerfel Gemuesebruehe ' , ' 1Pk Couscous ', ' 1Pk Morzarella '));
+values (2, 'Gemuesepfanne mit Couscous', 8, (' 1 Zucchini ' , ' 1 halbe Zwiebel ' , ' 1 Karotte ' , ' 1 Lauch ' , ' 1 Knoblauchzehe ' , ' 1 Wuerfel Gemuesebruehe ' , ' 1Pk Couscous ', ' 1Pk Mozzarella '));
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
 values (3, 'Veganer Stracciatella-Joghurt', 2, (' 50g Zartbitterkuvertuere ', ' 500g Sojajoguhrt '));
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
-values (4, 'Veganer-Morzarella', 4, (' 2 Essloeffel Flohsamenschalenmehl ', ' 50g Cashewnuesse ', '1 Essloeffel Zitronensaft ', '1g Salz & Pfeffer'));
+values (4, 'Veganer-Morzarella', 4, (' 2 Essloeffel Flohsamenschalenmehl ', ' 50g Cashewnuesse ', '1 Essloeffel Zitronensaft ', '1g Pfeffer'));
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
 values (5, 'Chicken Marengo', 6, (' 1 EL Olivenoel ',' 300g Champignon ',' 1 Hühnerbein ',' 1 Huehnerbruehewuerfel ',' 100g Kalamata-Oliven ',' 50g Petersilie '));
