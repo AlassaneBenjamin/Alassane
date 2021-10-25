@@ -73,6 +73,7 @@ create table  beschraenkungen (
 	beschraenkungsnr		integer not null,
 	beschraenkung			VARCHAR(50),
 	beschreibung			VARCHAR(50),
+	rezept_id               int,
 	CONSTRAINT beschraenkungen_pk PRIMARY KEY(beschraenkungsnr)
 );
 
