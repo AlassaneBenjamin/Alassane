@@ -214,7 +214,7 @@ insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
 values (5, 'Chicken Marengo', 6, (' 1 EL Olivenoel ',' 300g Champignon ',' 1 Huehnerbein ',' 1 Huehnerbruehewuerfel ',' 100g Kalamata-Oliven ',' 50g Petersilie '));
 
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
-values (6, 'Salmon & soya bohnen salat', 6, (' 1 Ei ',' 200g Sojabohne ',' 1 Limette ',' 2 EL Samenoel ',' 250g Linsen ',' 200g Lachsfilet '));
+values (6, 'Salmon & Soya Bohnen Salat', 6, (' 1 Ei ',' 200g Sojabohne ',' 1 Limette ',' 2 EL Samenoel ',' 250g Linsen ',' 200g Lachsfilet '));
 
 insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
 values (1, 'vegan', 'Keine tierischen Produkte', 3);
