@@ -76,6 +76,11 @@ create table  beschraenkungen (
 	CONSTRAINT beschraenkungen_pk PRIMARY KEY(beschraenkungsnr)
 );
 
+create table rezeptzutat(
+rezept_id int not null,
+zutatennr int not null,
+primary key (rezept_id, zutatennr));
+
 /******************************************************************************/
 /***                              Primary Keys                              ***/
 /******************************************************************************/
