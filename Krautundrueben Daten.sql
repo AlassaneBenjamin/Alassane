@@ -218,6 +218,10 @@ values (6, 'Salmon & Soya Bohnen Salat', 6, (' 1 Ei ',' 200g Sojabohne ',' 1 Lim
 insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
 values (0, 'Kein Rezept', 0, 'Keine Zutat');
 
+insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+values (7, 'Kartoffel mit Fleisch', 4, (' 300g Kartoffel ', ' 1 Chicken leg ', ' 1 Wienerwürstchien ', '100g Kichererbsen'));
+
+
 insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
 values (1, 'vegan', 'Keine tierischen Produkte', 3);
 
