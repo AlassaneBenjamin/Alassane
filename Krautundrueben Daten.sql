@@ -78,7 +78,7 @@ lieferant,
 KALORIEN,
 KOHLENHYDRATE,
 PROTEIN) 
-VALUES (5002, 'Zarbitterkuvertüre', 'gramm', 0.4, 450, 101, 280, 47, 6.6),
+VALUES (5002, 'Zarbitterkuvertuere', 'gramm', 0.4, 450, 101, 280, 47, 6.6),
  (5003, 'Sojajoghurt', 'gramm', 1.1, 100, 101, 210, 0, 20.2),
  (5004, 'Flohsamenmehl', 'EL', 0.56, 60, 101, 14, 0, 0.15),
  (5005, 'Cashewnüsse', 'gramm', 0.43, 1000, 101, 250, 15, 9),
@@ -98,13 +98,13 @@ KOHLENHYDRATE,
 PROTEIN ) 
 VALUES 	(4002, 'Sojabohne', 'Dose', 3.20, 200, 101, 294, 22, 25),		
 		(4003, 'Limette', 'Stück', 0.60, 9, 101, 17, 5.40, 0.7),
-		(4004, 'Samenöl', 'Esslöfel', 2.50, 10, 101, 240, 0, 0),
+		(4004, 'Samenoel', 'Essloeffel', 2.50, 10, 101, 240, 0, 0),
 		(4005, 'Linsen', 'Dose', 5.00, 12, 101, 412, 46, 20),
 		(4006, 'Lachsfilet', 'Stück', 12.50, 10, 101, 292, 0, 43.24),
-		(4011, 'Olivenöl', 'Esslöfel', 2.50, 5, 101, 119, 0, 0),
+		(4011, 'Olivenoel', 'Essloeffel', 2.50, 5, 101, 119, 0, 0),
 		(4012, 'Champignion', 'Packung', 4.5, 4, 101, 66, 9.8, 9.2),
 		(4013, 'Chicken leg', 'Stück', 2.8, 5, 101, 212, 0, 23),
-		(4014, 'Hühnerbrühewürfel', 'Stück', 1.2, 20, 101, 30, 2, 0),
+		(4014, 'Huehnerbruehewuerfel', 'Stueck', 1.2, 20, 101, 30, 2, 0),
 		(4015, 'pitted black kalamata olive', 'Dose', 5.9, 10, 101, 105, 6, 0.9),
 		(4016, 'Petersilie', 'Bunt', 3, 4, 101, 12, 0.7, 1),
 		(5055, 'Sahne', 'Packung', 3.2, 10, 101, 345, 2.9, 2);
@@ -117,7 +117,7 @@ set bezeichnung = 'Huehnerbein'
 where zutatennr = 4013;
 
 update ZUTAT 
-set bezeichnung = 'kalamata Oliven'
+set bezeichnung = 'Kalamata Oliven'
 where zutatennr = 4015;
 
 INSERT INTO BESTELLUNG (KUNDENNR, BESTELLDATUM, RECHNUNGSBETRAG, rezept_id) VALUES (2001,'2020-07-01', 6.21, 1);
@@ -219,7 +219,7 @@ insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
 values (0, 'Kein Rezept', 0, 'Keine Zutat');
 
 insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
-values (7, 'Kartoffel mit Fleisch', 4, (' 300g Kartoffel ', ' 1 Chicken leg ', ' 1 Wienerwürstchien ', '100g Kichererbsen'));
+values (7, 'Kartoffel mit Fleisch', 4, (' 300g Kartoffel ', ' 1 Huehnerbein ', ' 1 Wienerwuerstchen ', '100g Kichererbsen'));
 
 
 insert into ernaehrungskategorien (id, kategorie_name, beschreibung, rezept_id)
@@ -247,7 +247,7 @@ insert into beschraenkungen (beschraenkungsnr, beschraenkung, beschreibung, reze
 values (01, 'Laktose', 'Eine Intoleranz bei tierischen Milchprodukten', 1), 
 (02, 'Zöliakie', 'Eine Glutenunverträglichkeit',0), 
 (03, 'Nuss', 'Allergie bei Nuessen',4), 
-(04, 'Ei', 'Allergie bei Hühnereiern', 6), 
+(04, 'Ei', 'Allergie bei Huehnereiern', 6), 
 (05, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 6),
 (06, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 3);
 
