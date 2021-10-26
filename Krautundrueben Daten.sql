@@ -197,28 +197,28 @@ INSERT INTO BESTELLUNGZUTAT(BESTELLNR, ZUTATENNR, MENGE) VALUES (11, 1012, 5);
 
 INSERT INTO BESTELLUNGZUTAT(BESTELLNR, ZUTATENNR, MENGE) VALUES (12, 1010, 15);
 
-insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
 values (1, 'Kartoffelauflauf', 7, (' 500g Kartoffel ' , ' 300g Tomaten ' , ' 2Pk Mozzarella ' , ' 2 Bunde Basilikum ' , ' 100ml Sahne ' , ' 1Prise Salz '));
 
-insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
 values (2, 'Gemuesepfanne mit Couscous', 8, (' 1 Zucchini ' , ' 1 halbe Zwiebel ' , ' 1 Karotte ' , ' 1 Lauch ' , ' 1 Knoblauchzehe ' , ' 1 Wuerfel Gemuesebruehe ' , ' 1Pk Couscous '));
 
-insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
 values (3, 'Veganer Stracciatella-Joghurt', 2, (' 50g Zartbitterkuvertuere ', ' 500g Sojajoguhrt '));
 
-insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
 values (4, 'Veganer-Morzarella', 4, (' 2 Essloeffel Flohsamenschalenmehl ', ' 50g Cashewnuesse ', '1 Essloeffel Zitronensaft ', '1g Pfeffer'));
 
-insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
 values (5, 'Chicken Marengo', 6, (' 1 EL Olivenoel ',' 300g Champignon ',' 1 Huehnerbein ',' 1 Huehnerbruehewuerfel ',' 100g Kalamata-Oliven ',' 50g Petersilie '));
 
-insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
 values (6, 'Salmon & Soya Bohnen Salat', 6, (' 1 Ei ',' 200g Sojabohne ',' 1 Limette ',' 2 EL Samenoel ',' 250g Linsen ',' 200g Lachsfilet '));
 
-insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
 values (0, 'Kein Rezept', 0, 'Keine Zutat');
 
-insert into rezepte (id, rezeptname, zutaten_anzahl, zutaten)
+insert into rezepte (rezept_id, rezeptname, zutaten_anzahl, zutaten)
 values (7, 'Kartoffel mit Fleisch', 4, (' 300g Kartoffel ', ' 1 Chicken leg ', ' 1 Wienerwürstchien ', '100g Kichererbsen'));
 
 
@@ -250,6 +250,15 @@ values (01, 'Laktose', 'Eine Intoleranz bei tierischen Milchprodukten', 1),
 (04, 'Ei', 'Allergie bei Hühnereiern', 6), 
 (05, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 6),
 (06, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 3);
+
+insert into rezeptzutat (rezept_id,zutatennr)
+values(1, 1003), (1, 1006),(1, 1010), (1, 3002),(1, 5007), (1, 5055),
+(2, 1001), (2, 1002), (2, 1005), (2, 1008), (2, 1009), (2, 7043),(3, 5002), (3, 5003),
+(4, 5004), (4, 5005), (4, 5006), (4, 5008),
+(5, 4011), (5, 4012), (5, 4014), (5, 4016), (5, 4013), (5, 4015),
+(6, 4001), (6, 4002), (6, 4003), (6, 4004), (6, 4005), (6, 4006),
+(7, 1006), (7, 4013), (7, 5001), (7, 6300),
+(0, 1004), (0, 1007), (0, 1011), (0, 1012), (0, 2001), (0, 3001), (0, 3003), (0, 5001), (0, 9001), (0, 6408), (0, 6003);
 
 
 COMMIT WORK;
