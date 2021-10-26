@@ -251,6 +251,10 @@ values (01, 'Laktose', 'Eine Intoleranz bei tierischen Milchprodukten', 1),
 (05, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 6),
 (06, 'Soja', 'Allergie bei Sojabohnen und Sojaprodukten', 3);
 
+insert into beschraenkungen (beschraenkungsnr, beschraenkung, beschreibung, rezept_id)
+values (7, 'Fleischallergie', 'Allergie gegen Fleischprodukte', 7);
+
+
 insert into rezeptzutat (rezept_id,zutatennr)
 values(1, 1003), (1, 1006),(1, 1010), (1, 3002),(1, 5007), (1, 5055),
 (2, 1001), (2, 1002), (2, 1005), (2, 1008), (2, 1009), (2, 7043),(3, 5002), (3, 5003),
