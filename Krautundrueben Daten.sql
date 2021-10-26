@@ -260,5 +260,94 @@ values(1, 1003), (1, 1006),(1, 1010), (1, 3002),(1, 5007), (1, 5055),
 (7, 1006), (7, 4013), (7, 5001), (7, 6300),
 (0, 1004), (0, 1007), (0, 1011), (0, 1012), (0, 2001), (0, 3001), (0, 3003), (0, 5001), (0, 9001), (0, 6408), (0, 6003);
 
+alter table rezepte 
+add column kalorien integer,
+add column kohlenhydrate decimal,
+add column protein decimal;
+
+update rezepte 
+set kalorien = 1169
+where rezept_id = 1;
+
+update rezepte 
+set kohlenhydrate = 112
+where rezept_id = 1;
+
+update rezepte 
+set protein = 27
+where rezept_id = 1;
+
+update rezepte 
+set  kalorien = 440
+where rezept_id = 2;
+
+update rezepte 
+set kohlenhydrate = 50
+where rezept_id = 2;
+
+update rezepte 
+set protein = 12
+where rezept_id = 2;
+
+update rezepte 
+set kalorien = 675
+where rezept_id = 3;
+
+update rezepte 
+set kohlenhydrate = 95
+where rezept_id = 3;
+
+update rezepte 
+set protein = 7.5
+where rezept_id = 3;
+
+update rezepte 
+set kalorien = 147
+where rezept_id = 4;
+
+update rezepte 
+set kohlenhydrate = 7
+where rezept_id = 4;
+
+update rezepte 
+set protein = 3.8
+where rezept_id = 4;
+
+update rezepte 
+set kalorien = 326
+where rezept_id = 5;
+
+update rezepte 
+set kohlenhydrate = 8
+where rezept_id = 5;
+
+update rezepte 
+set protein = 33
+where rezept_id = 5;
+
+update rezepte 
+set kalorien = 618
+where rezept_id = 6;
+
+update rezepte 
+set kohlenhydrate = 41
+where rezept_id = 6;
+
+update rezepte 
+set protein = 49
+where rezept_id = 6;
+
+update rezepte 
+set kalorien = 696
+where rezept_id = 7;
+
+update rezepte 
+set kohlenhydrate = 105.27
+where rezept_id = 7;
+
+update rezepte 
+set protein = 51.65
+where rezept_id = 7;
+
 
 COMMIT WORK;
