@@ -113,7 +113,7 @@ VALUES 	(4002, 'Sojabohne', 'Dose', 3.20, 200, 101, 294, 22, 25),
 
 		
 update ZUTAT 
-set bezeichnung = 'Hühnerbein'
+set bezeichnung = 'Huehnerbein'
 where zutatennr = 4013;
 
 update ZUTAT 
