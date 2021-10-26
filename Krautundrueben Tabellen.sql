@@ -53,7 +53,7 @@ CREATE TABLE LIEFERANT (
 );
 
 create table rezepte(
-id int not null,
+rezept_id int not null,
 rezeptname varchar not null,
 zutaten_anzahl int not null,
 zutaten varchar not null,
