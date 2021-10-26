@@ -58,7 +58,7 @@ rezept_id int not null,
 rezeptname varchar not null,
 zutaten_anzahl int not null,
 zutaten varchar not null,
-constraint rezepte_pk primary key (id)
+constraint rezepte_pk primary key (rezept_id)
 );
 
 create table ernaehrungskategorien(
