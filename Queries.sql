@@ -50,12 +50,15 @@ rezepte.rezept_id = bestellung.rezept_id INNER JOIN kunde ON
 kunde.kundennr = bestellung.kundennr where kunde.kundennr= $1;
 
 
+
+--Auswahl von Rezepten entsprechend vorgegebener Ernährungskategorien-
 select*
 from rezepte r 
 left join ernaehrungskategorien e 
 on r.rezept_id = e.rezept_id 
 where e.kategorie_name = 'vegan';
 
+--Zusammenstellung von Zutaten entsprechend eines Rezepts-
 select z.bezeichnung 
 from zutat z 
 left join rezeptzutat r 
@@ -64,6 +67,7 @@ left join rezepte re
 on r.rezept_id = re.rezept_id 
 where re.rezeptname = 'Kartoffelauflauf';
 
+--Auswahl bzw. Ausschluss von Rezepten auf Basis von Beschränkungen-
 select r.rezeptname 
 from rezepte r 
 left join beschraenkungen b 
@@ -75,12 +79,16 @@ left join beschraenkungen b
 on r.rezept_id = b.rezept_id 
 where b.beschraenkung = 'Soja';
 
+
+--Auswahl aller Rezepte, die eine bestimmte Kalorienmenge nicht überschreiten-
 select*
 from rezepte r 
 where r.kalorien < 500 ;
 
+
+
+-- 3 zusätzliche Abfragen-
+-- Auswahl aller Bestellungen deren Rechnungsbetrag über 15 ist-
 select* 
 from bestellung b 
 where b.rechnungsbetrag > 15;
-
-
