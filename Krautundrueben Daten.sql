@@ -83,7 +83,7 @@ VALUES (5002, 'Zarbitterkuvertüre', 'gramm', 0.4, 450, 101, 280, 47, 6.6),
  (5004, 'Flohsamenmehl', 'EL', 0.56, 60, 101, 14, 0, 0.15),
  (5005, 'Cashewnüsse', 'gramm', 0.43, 1000, 101, 250, 15, 9),
  (5006, 'Zitronensaft', 'EL', 0.10, 250, 101, 0.58, 5, 0.3),
- (5007, 'Salz', 'gramm', 1, 100, 101, 10000, 0, 0.34),
+ (5007, 'Salz', 'gramm', 1, 100, 101, 0, 0, 0.34),
  (5008, 'Pfeffer', 'gramm', 1, 100, 101, 60, 0, 0.35);
  
 INSERT INTO ZUTAT (
