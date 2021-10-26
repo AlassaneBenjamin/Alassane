@@ -85,10 +85,36 @@ select*
 from rezepte r 
 where r.kalorien < 500 ;
 
+--Auswahl aller Rezepte, die weniger als fünf Zutaten enthalten und eine bestimmte Ernährungskategorie erfüllen--
+
+select r.rezeptname, r.zutaten_anzahl, e.kategorie_name 
+from rezepte r 
+left join ernaehrungskategorien e 
+on r.rezept_id = e.rezept_id 
+where r.zutaten_anzahl < 5;
 
 
--- 3 zusätzliche Abfragen-
--- Auswahl aller Bestellungen deren Rechnungsbetrag über 15 ist-
+--Auswahl aller Rezepte, die eine gewisse Zutat enthalten--
+
+select r.rezeptname 
+from rezepte r 
+where r.zutaten like '%Tomaten%';
+
+-- Zusätzliche Abfragen--
+-- Auswahl aller Bestellungen deren Rechnungsbetrag über 15 ist--
 select* 
 from bestellung b 
 where b.rechnungsbetrag > 15;
+
+--Rezept mit den meisten Zutaten--
+select *
+from rezepte r2 
+where zutaten_anzahl in 
+(
+	select max(zutaten_anzahl) 
+	from rezepte r   
+	);
+
+--Wie viele Rezepte gibt es der Datenbank?;--
+select count(r.rezeptname) 
+from rezepte r;
