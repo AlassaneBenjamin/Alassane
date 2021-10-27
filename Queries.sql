@@ -92,7 +92,9 @@ kunde.kundennr = bestellung.kundennr where kunde.kundennr= $1;
 
 --Auswahl aller Zutaten, die bisher keinem Rezept zugeordnet sind--
 select *
-from zutat
+from zutat z 
+left join rezeptzutat r 
+on z.zutatennr = r.zutatennr 
 where rezept_id = 0;
 
 
