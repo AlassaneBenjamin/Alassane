@@ -117,7 +117,7 @@ select r.rezeptname, r.zutaten_anzahl, e.kategorie_name
 from rezepte r 
 left join ernaehrungskategorien e 
 on r.rezept_id = e.rezept_id 
-where r.zutaten_anzahl < 5;
+where r.zutaten_anzahl < 5 and e.kategorie_name = 'vegan';
 
 
 -- Zusätzliche Abfragen:--
