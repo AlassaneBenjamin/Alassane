@@ -143,9 +143,3 @@ select count(r.rezeptname)
 from rezepte r;
 
 
---Auswahl von Zutaten eines Rezeptes aus der Zutatentabelle-
-select z.bezeichnung 
-from zutat z 
-left join rezeptzutat r 
-on z.zutatennr = r.zutatennr 
-where r.rezept_id = $1 ;
