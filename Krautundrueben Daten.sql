@@ -359,13 +359,4 @@ update rezepte
 set protein = 51.65
 where rezept_id = 7;
 
-ALTER TABLE rezepte
-RENAME COLUMN kalorien TO sum_kalorien;
-
-ALTER TABLE rezepte
-RENAME COLUMN kohlenhydrate TO sum_kohlenhydrate;
-
-ALTER TABLE rezepte
-RENAME COLUMN protein TO sum_protein;
-
 COMMIT WORK;
