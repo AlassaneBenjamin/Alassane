@@ -80,6 +80,7 @@ create table  beschraenkungen (
 create table rezeptzutat(
 rezept_id int not null,
 zutatennr int not null,
+menge decimal not null,
 primary key (rezept_id, zutatennr));
 
 /******************************************************************************/
