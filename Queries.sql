@@ -143,3 +143,11 @@ select count(r.rezeptname)
 from rezepte r;
 
 
+--Angabe der Zutaten, Mengen und Gesamt Nährwerte für die Rezepten-- 
+select r.rezeptname,r.sum_kalorien , r.sum_kohlenhydrate , r.sum_protein,  r2.menge , z.*
+from rezepte r 
+left join rezeptzutat r2 
+on r.rezept_id = r2.rezept_id 
+left join zutat z 
+on r2.zutatennr = z.zutatennr;
+
