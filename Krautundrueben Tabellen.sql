@@ -61,6 +61,15 @@ zutaten varchar not null,
 constraint rezepte_pk primary key (rezept_id)
 );
 
+ALTER TABLE rezepte
+RENAME COLUMN kalorien TO sum_kalorien;
+
+ALTER TABLE rezepte
+RENAME COLUMN kohlenhydrate TO sum_kohlenhydrate;
+
+ALTER TABLE rezepte
+RENAME COLUMN protein TO sum_protein;
+
 create table ernaehrungskategorien(
 id int not null,
 kategorie_name varchar not null,
