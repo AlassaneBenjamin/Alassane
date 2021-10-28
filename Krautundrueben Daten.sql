@@ -269,6 +269,12 @@ add column kalorien integer,
 add column kohlenhydrate decimal,
 add column protein decimal;
 
+--delete the zutaten column from rezepte--
+
+alter table rezepte 
+drop column zutaten;
+
+
 update rezepte 
 set kalorien = 1169
 where rezept_id = 1;
